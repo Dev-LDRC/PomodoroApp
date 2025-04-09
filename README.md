@@ -4,7 +4,7 @@
 
 ## ✨ Preview
 
-[🔗 Acesse a versão online aqui 🌐](https://seulink.com)
+[🔗 Acesse a versão online aqui 🌐](https://pomodoroapp-lucas-davids-projects.vercel.app/)
 
 ![Pomodoro Preview](./public/project_preview.png)
 
@@ -52,4 +52,4 @@ npm run dev:local
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/Dev-LDRC/PomodoroApp/blob/main/LICENSE) para mais detalhes.
