@@ -32,14 +32,14 @@
 #### 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/pomodoro-app.git
-cd pomodoro-app
+git clone https://github.com/Dev-LDRC/PomodoroApp.git
+cd PomodoroApp
 ```
 
 #### 2. **Instale as dependências:**
 
 ```bash
-npm install
+npm i
 ```
 
 #### 3. **Inicie o servidor de desenvolvimento:**
