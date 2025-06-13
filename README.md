@@ -1,4 +1,4 @@
-# ⏱️ Pomodoro Timer
+# ⏱️ Pomodoro app
 
 ### Um app de Pomodoro simples, rápido e responsivo feito com **React + TypeScript**, utilizando **Vite** para build e **Tailwind CSS 4.0** para estilização.
 
