@@ -15,6 +15,8 @@ export default function Home() {
 
   const ref_inputTargetUser = useRef<HTMLInputElement>(null);
 
+  const audio = new Audio('/sound/notification-sound.mp3')
+
   // Efeito para gerenciar o contador
   useEffect(() => {
 
@@ -29,6 +31,8 @@ export default function Home() {
           if (minutes === 0) {
 
             if (interval) clearInterval(interval);
+
+            audio.play();
 
             if (!isRest) {
 
