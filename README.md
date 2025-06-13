@@ -4,7 +4,7 @@
 
 ## ✨ Preview
 
-[🔗 Acesse a versão online aqui 🌐](https://pomodoroapp-lucas-davids-projects.vercel.app/)
+[🔗 Acesse a versão online aqui 🌐](https://pomodoroapp-teal.vercel.app/)
 
 ![Pomodoro Preview](./public/project_preview.png)
 
