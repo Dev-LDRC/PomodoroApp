@@ -136,7 +136,7 @@ export default function Home() {
 
     <main className={`flex h-svh w-svw justify-center items-center ${!isRest ? "bg-app_background" : "bg-app_pause"}`}>
 
-      <div className="bg-app_contrast rounded-2xl p-6 h-[90%] w-[90%] scrollbar_main overflow-y-auto overflow-x-hidden flex flex-col justify-between gap-24">
+      <div className="bg-app_contrast rounded-2xl p-6 h-[90%] w-[90%] scrollbar_main overflow-y-auto overflow-x-hidden flex flex-col justify-between gap-24 sm:gap-16">
 
         <div className=''>
 
@@ -168,7 +168,11 @@ export default function Home() {
 
               <div className='flex flex-col gap-2.5'>
 
-                <h1 className={`text-center ${!isUserPause ? "text-app_primary" : "text-app_alert"} text-9xl`}>{formatTime(minutes, seconds)}</h1>
+                <h1
+                  className={`text-center ${!isUserPause ? "text-app_primary" : "text-app_alert"} text-9xl sm:text-8xl`}
+                >
+                  {formatTime(minutes, seconds)}
+                </h1>
 
                 <div className='flex justify-center gap-5'>
 
@@ -190,7 +194,7 @@ export default function Home() {
                     CICLOS: <span className='text-app_primary'>{cycles}</span>
                   </p>
 
-                  <button className='text-center bg-app_contrast border-3 border-app_primary hover:brightness-125 rounded-md p-2.5 text-app_background cursor-pointer text-xs active:text-app_primary transition' onClick={skipCycle}>
+                  <button className='text-center bg-app_contrast border-3 border-app_primary hover:brightness-125 rounded-md p-2.5 text-app_background cursor-pointer text-xs active:text-app_primary' onClick={skipCycle}>
                     PULAR CICLO
                   </button>
 
@@ -201,7 +205,7 @@ export default function Home() {
                   <input
                     type="text"
                     name='inputUserTarget'
-                    className='bg-app_background rounded-l-md w-full outline-0 p-2.5 border-2 border-app_contrast'
+                    className='bg-app_background rounded-l-md w-full outline-0 p-2.5 border-2 border-app_contrast focus:drop-shadow-2xl transition'
                     value={inputUserTarget}
                     onChange={e => set_inputUserTarget(e.target.value)}
                     ref={ref_inputTargetUser}
@@ -209,7 +213,7 @@ export default function Home() {
 
                   <button
                     name='inputUserTarget'
-                    className='text-center bg-app_contrast hover:brightness-125 rounded-r-md p-2.5 text-app_background cursor-pointer text-xs active:text-app_primary transition'
+                    className='text-center bg-app_contrast hover:brightness-125 rounded-r-md p-2.5 text-app_background cursor-pointer text-xs active:text-app_primary'
                     type='submit'
                   >
                     DEFINIR OBJETIVO
@@ -231,13 +235,13 @@ export default function Home() {
 
             <div className='flex flex-col gap-2 w-full'>
 
-              <h1 className='text-app_contrast text-base font-bold'>
+              <h1 className='text-app_contrast text-sm font-bold'>
                 OBJETIVO ATUAL:
               </h1>
 
               <div className='p-4 bg-app_contrast rounded-md'>
 
-                <p className='text-app_primary break-all'>{currentTargetUser}</p>
+                <p className='text-app_background text-sm break-all'>{currentTargetUser}</p>
 
               </div>
 
