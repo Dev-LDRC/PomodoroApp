@@ -38,7 +38,7 @@ export default function Home() {
 
               setIsRest(!isRest)
 
-              if (cycles > 4) {
+              if (cycles > 0 && cycles % 4 === 0) {
                 setMinutes(15)
               } else {
                 setMinutes(5)
